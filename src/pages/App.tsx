@@ -58,9 +58,9 @@ const AppWrapper = styled.div<{ redesignFlagEnabled: boolean }>`
 
 const BodyWrapper = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   width: 100%;
-  padding: 72px 0px 0px 0px;
+  padding: 0px 9px 9px 0px;
   align-items: center;
   flex: 1;
   ${({ theme }) => theme.deprecated_mediaWidth.deprecated_upToSmall`

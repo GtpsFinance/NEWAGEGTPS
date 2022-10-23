@@ -4,7 +4,7 @@ import Input from 'components/NumericalInput'
 import { BodyWrapper } from 'pages/AppBody'
 import styled from 'styled-components/macro'
 
-export const PageWrapper = styled(BodyWrapper)<{ wide: boolean }>`
+export const PageWrapper = styled(BodyWrapper) <{ wide: boolean }>`
   max-width: ${({ wide }) => (wide ? '880px' : '480px')};
   width: 100%;
 
@@ -36,7 +36,7 @@ export const ScrollablePage = styled.div`
   flex-direction: column;
 
   ${({ theme }) => theme.deprecated_mediaWidth.deprecated_upToMedium`
-    max-width: 480px;
+    max-width: 720px;
     margin: 0 auto;
   `};
 
@@ -49,7 +49,7 @@ export const ScrollablePage = styled.div`
   }
 `
 
-export const DynamicSection = styled(AutoColumn)<{ disabled?: boolean }>`
+export const DynamicSection = styled(AutoColumn) <{ disabled?: boolean }>`
   opacity: ${({ disabled }) => (disabled ? '0.2' : '1')};
   pointer-events: ${({ disabled }) => (disabled ? 'none' : 'initial')};
 `
