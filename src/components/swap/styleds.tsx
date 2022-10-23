@@ -10,7 +10,7 @@ import { AutoColumn } from '../Column'
 
 export const PageWrapper = styled.div<{ redesignFlag: boolean }>`
   padding: 68px 8px 0px;
-  max-width: 480px;
+  max-width: 720px;
   width: 100%;
 
   @media only screen and (max-width: ${({ theme }) => `${theme.breakpoint.md}px`}) {
@@ -66,15 +66,15 @@ export const SectionBreak = styled.div`
   background-color: ${({ theme }) => theme.deprecated_bg3};
 `
 
-export const ErrorText = styled(Text)<{ severity?: 0 | 1 | 2 | 3 | 4 }>`
+export const ErrorText = styled(Text) <{ severity?: 0 | 1 | 2 | 3 | 4 }>`
   color: ${({ theme, severity }) =>
     severity === 3 || severity === 4
       ? theme.deprecated_red1
       : severity === 2
-      ? theme.deprecated_yellow2
-      : severity === 1
-      ? theme.deprecated_text1
-      : theme.deprecated_text2};
+        ? theme.deprecated_yellow2
+        : severity === 1
+          ? theme.deprecated_text1
+          : theme.deprecated_text2};
 `
 
 export const TruncatedText = styled(Text)`
@@ -154,7 +154,7 @@ export const SwapShowAcceptChanges = styled(AutoColumn)`
   margin-top: 8px;
 `
 
-export const ResponsiveTooltipContainer = styled(TooltipContainer)<{ origin?: string; width?: string }>`
+export const ResponsiveTooltipContainer = styled(TooltipContainer) <{ origin?: string; width?: string }>`
   background-color: ${({ theme }) => theme.deprecated_bg0};
   border: 1px solid ${({ theme }) => theme.deprecated_bg2};
   padding: 1rem;
