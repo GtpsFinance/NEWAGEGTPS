@@ -27,7 +27,11 @@ export const SwapWrapper = styled.main<{ margin?: string; maxWidth?: string; red
   position: relative;
   background: rgb(13 11 177);
   border-radius: ${({ redesignFlag }) => (redesignFlag ? '500px' : '24px')};
+<<<<<<< HEAD
   border: 9px solid ${({ theme, redesignFlag }) => (redesignFlag ? theme.backgroundOutline : 'transparent')};
+=======
+  border: 1px solid ${({ theme, redesignFlag }) => (redesignFlag ? theme.backgroundOutline : 'transparent')};
+>>>>>>> 96e85c699898e92f8579de6db06185efe1173f8c
   padding: 0px;
   z-index: ${Z_INDEX.deprecated_content};
   box-shadow: ${({ redesignFlag }) =>
