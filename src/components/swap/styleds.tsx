@@ -25,10 +25,10 @@ export const PageWrapper = styled.div<{ redesignFlag: boolean }>`
 // Mostly copied from `AppBody` but it was getting too hard to maintain backwards compatibility.
 export const SwapWrapper = styled.main<{ margin?: string; maxWidth?: string; redesignFlag: boolean }>`
   position: relative;
-  background: ${({ theme, redesignFlag }) => (redesignFlag ? theme.backgroundSurface : theme.deprecated_bg0)};
-  border-radius: ${({ redesignFlag }) => (redesignFlag ? '16px' : '24px')};
-  border: 1px solid ${({ theme, redesignFlag }) => (redesignFlag ? theme.backgroundOutline : 'transparent')};
-  padding: 8px;
+  background: rgb(13 11 177);
+  border-radius: ${({ redesignFlag }) => (redesignFlag ? '500px' : '24px')};
+  border: 9px solid ${({ theme, redesignFlag }) => (redesignFlag ? theme.backgroundOutline : 'transparent')};
+  padding: 0px;
   z-index: ${Z_INDEX.deprecated_content};
   box-shadow: ${({ redesignFlag }) =>
     !redesignFlag &&
