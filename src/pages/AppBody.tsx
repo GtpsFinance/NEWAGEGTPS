@@ -6,7 +6,7 @@ import { Z_INDEX } from 'theme/zIndex'
 export const BodyWrapper = styled.main<{ margin?: string; maxWidth?: string; redesignFlag?: boolean }>`
   position: relative;
   margin-top: ${({ margin }) => margin ?? '0px'};
-  max-width: ${({ maxWidth, redesignFlag }) => maxWidth ?? (redesignFlag ? '420px' : '480px')};
+  max-width: ${({ maxWidth, redesignFlag }) => maxWidth ?? (redesignFlag ? '420px' : '720px')};
   width: 100%;
   background: ${({ theme, redesignFlag }) => (redesignFlag ? theme.backgroundSurface : theme.deprecated_bg0)};
   border-radius: ${({ redesignFlag }) => (redesignFlag ? '500px' : '24px')};
