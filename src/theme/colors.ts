@@ -87,7 +87,7 @@ export interface GlobalPalette {
 export const colors: GlobalPalette = {
   white: '#FFFFFF',
   black: '#000000',
-  gray50: '#F5F6FC',
+  gray50: '#0D0BB1',
   gray100: '#E8ECFB',
   gray200: '#C9D0E7',
   gray300: '#99A1BD',
