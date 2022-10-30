@@ -26,7 +26,7 @@ const MissingImageLogo = styled.div<{ size?: string }>`
 /**
  * Renders an image by sequentially trying a list of URIs, and then eventually a fallback triangle alert
  */
-export default function Logo({ srcs, alt, style, size, symbol, ...rest }: LogoProps) {
+export default function UniIcons({ srcs, alt, style, size, symbol, ...rest }: LogoProps) {
   const [, refresh] = useState<number>(0)
 
   const src: string | undefined = srcs.find((src) => !BAD_SRCS[src])

@@ -2,7 +2,7 @@ import clsx from 'clsx'
 import { Box } from 'nft/components/Box'
 import { Portal } from 'nft/components/common/Portal'
 import { Row } from 'nft/components/Flex'
-import { BackArrowIcon, ChevronUpIcon, LightningBoltIcon, UniIcon } from 'nft/components/icons'
+import { BackArrowIcon, ChevronUpIcon, LightningBoltIcon, UniIcons } from 'nft/components/icons'
 import { Overlay, stopPropagation } from 'nft/components/modals/Overlay'
 import { vars } from 'nft/css/sprinkles.css'
 import { useIsMobile, useSendTransaction, useTransactionResponse } from 'nft/hooks'
@@ -74,7 +74,7 @@ const TxCompleteModal = () => {
             {/* Successfully purchased NFTs */}
             {showPurchasedModal && (
               <Box className={styles.successModal} onClick={stopPropagation}>
-                <UniIcon color={vars.color.pink400} width="36" height="36" className={styles.uniLogo} />
+                <UniIcons color={vars.color.pink400} width="36" height="36" className={styles.uniLogo} />
                 <Box display="flex" flexWrap="wrap" width="full" height="min">
                   <h1 className={styles.title}>Complete!</h1>
                   <p className={styles.subHeading}>Uniswap has granted your wish!</p>

@@ -12,7 +12,7 @@ export const LogoIcon = (props: SVGProps) => (
     width="151"
     height="43"
     viewBox="0 0 151 43"
-    xmlns="http://www.w3.org/2000/svg"
+    xmlns="https://img1.wsimg.com/isteam/ip/f561f953-0bdd-48bf-a39b-982ecbd1698b/logo%20(14).svg/:/rs=w:100,h:100,cg:true,m/cr=w:100,h:100/qt=q:27"
     fill={themeVars.colors.textPrimary}
     color={themeVars.colors.textPrimary}
     {...props}
@@ -68,8 +68,12 @@ export const LogoIcon = (props: SVGProps) => (
   </svg>
 )
 
-export const UniIcon = (props: SVGProps) => (
-  <svg {...props} fill="none" xmlns="http://www.w3.org/2000/svg">
+export const UniIcons = (props: SVGProps) => (
+  <svg
+    {...props}
+    fill="none"
+    xmlns="https://img1.wsimg.com/isteam/ip/f561f953-0bdd-48bf-a39b-982ecbd1698b/logo%20(14).svg/:/rs=w:100,h:100,cg:true,m/cr=w:100,h:100/qt=q:27"
+  >
     <path
       fillRule="evenodd"
       clipRule="evenodd"
@@ -80,7 +84,7 @@ export const UniIcon = (props: SVGProps) => (
 )
 
 export const UniIconMobile = (props: SVGProps) => (
-  <svg fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
+  <svg fill="none" xmlns="logo_pink" {...props}>
     <path
       fillRule="evenodd"
       clipRule="evenodd"
@@ -91,7 +95,7 @@ export const UniIconMobile = (props: SVGProps) => (
 )
 
 export const UniIconSmall = (props: SVGProps) => (
-  <svg {...props} fill="none" xmlns="http://www.w3.org/2000/svg">
+  <svg {...props} fill="none" xmlns="logo_pink">
     <path
       fillRule="evenodd"
       clipRule="evenodd"

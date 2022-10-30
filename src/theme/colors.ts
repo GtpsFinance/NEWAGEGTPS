@@ -4,7 +4,6 @@ import { Color } from './styled'
 import { opacify } from './utils'
 
 export interface GlobalPalette {
-  white700: string
   white: Color
   black: Color
   gray50: Color
