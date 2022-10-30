@@ -58,7 +58,7 @@ const opacities = {
 const deprecated_mediaWidthTemplates: { [width in keyof typeof MEDIA_WIDTHS]: typeof css } = Object.keys(
   MEDIA_WIDTHS
 ).reduce((accumulator, size) => {
-  ;(accumulator as any)[size] = (a: any, b: any, c: any) => css`
+  ; (accumulator as any)[size] = (a: any, b: any, c: any) => css`
     @media (max-width: ${(MEDIA_WIDTHS as any)[size]}px) {
       ${css(a, b, c)}
     }
@@ -125,7 +125,7 @@ function uniswapThemeColors(darkMode: boolean): ThemeColors {
     shallowShadow: darkMode ? colorsDark.shallowShadow : colorsLight.shallowShadow,
     deepShadow: darkMode ? colorsDark.deepShadow : colorsLight.deepShadow,
     hoverState: opacify(24, ColorsPalette.blue200),
-    hoverDefault: opacify(8, ColorsPalette.gray200),
+    hoverDefault: opacify(8, ColorsPalette.blue700),
     stateOverlayHover: darkMode ? colorsDark.stateOverlayHover : colorsLight.stateOverlayHover,
     stateOverlayPressed: darkMode ? colorsDark.stateOverlayPressed : colorsLight.stateOverlayPressed,
   }
@@ -142,17 +142,17 @@ function oldColors(darkMode: boolean): Colors {
     deprecated_text1: darkMode ? colorsDark.textPrimary : colorsLight.textPrimary,
     deprecated_text2: darkMode ? colorsDark.textSecondary : colorsLight.textSecondary,
     deprecated_text3: darkMode ? colorsDark.textTertiary : colorsLight.textTertiary,
-    deprecated_text4: darkMode ? ColorsPalette.gray200 : ColorsPalette.gray300,
-    deprecated_text5: darkMode ? ColorsPalette.gray500 : ColorsPalette.gray50,
+    deprecated_text4: darkMode ? ColorsPalette.white : ColorsPalette.gray300,
+    deprecated_text5: darkMode ? ColorsPalette.white : ColorsPalette.gray50,
 
     // backgrounds / greys
-    deprecated_bg0: darkMode ? ColorsPalette.gray900 : ColorsPalette.white,
-    deprecated_bg1: darkMode ? ColorsPalette.gray800 : ColorsPalette.gray50,
-    deprecated_bg2: darkMode ? ColorsPalette.gray700 : ColorsPalette.gray100,
-    deprecated_bg3: darkMode ? ColorsPalette.gray600 : ColorsPalette.gray200,
-    deprecated_bg4: darkMode ? ColorsPalette.gray500 : ColorsPalette.gray300,
-    deprecated_bg5: darkMode ? ColorsPalette.gray400 : ColorsPalette.gray400,
-    deprecated_bg6: darkMode ? ColorsPalette.gray300 : ColorsPalette.gray500,
+    deprecated_bg0: darkMode ? ColorsPalette.blue700 : ColorsPalette.blue600,
+    deprecated_bg1: darkMode ? ColorsPalette.blue200 : ColorsPalette.blue50,
+    deprecated_bg2: darkMode ? ColorsPalette.blue400 : ColorsPalette.blue100,
+    deprecated_bg3: darkMode ? ColorsPalette.blue500 : ColorsPalette.blue200,
+    deprecated_bg4: darkMode ? ColorsPalette.blue100 : ColorsPalette.blue300,
+    deprecated_bg5: darkMode ? ColorsPalette.blue400 : ColorsPalette.gray400,
+    deprecated_bg6: darkMode ? ColorsPalette.blue300 : ColorsPalette.blue500,
 
     //specialty colors
     deprecated_modalBG: darkMode ? opacify(40, ColorsPalette.black) : opacify(30, ColorsPalette.black),
@@ -160,8 +160,8 @@ function oldColors(darkMode: boolean): Colors {
 
     //primary colors
     deprecated_primary1: darkMode ? colorsDark.accentAction : colorsLight.accentAction,
-    deprecated_primary2: darkMode ? ColorsPalette.blue400 : ColorsPalette.pink300,
-    deprecated_primary3: darkMode ? ColorsPalette.blue300 : ColorsPalette.pink200,
+    deprecated_primary2: darkMode ? ColorsPalette.blue400 : ColorsPalette.blue300,
+    deprecated_primary3: darkMode ? ColorsPalette.blue300 : ColorsPalette.blue200,
     deprecated_primary4: darkMode ? '#376bad70' : '#F6DDE8',
     deprecated_primary5: darkMode ? '#153d6f70' : '#FDEAF1',
 
@@ -235,7 +235,7 @@ export default function ThemeProvider({ children }: { children: React.ReactNode 
   return <StyledComponentsThemeProvider theme={themeObject}>{children}</StyledComponentsThemeProvider>
 }
 
-const TextWrapper = styled(Text)<{ color: keyof AllColors }>`
+const TextWrapper = styled(Text) <{ color: keyof AllColors }>`
   color: ${({ color, theme }) => (theme as any)[color]};
 `
 
