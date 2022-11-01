@@ -3,17 +3,17 @@ import { Theme, vars } from 'nft/css/sprinkles.css'
 export const lightTheme: Theme = {
   colors: {
     accentFailure: vars.color.red400,
-    accentFailureSoft: 'rgba(250, 43, 57, 0.12)',
+    accentFailureSoft: 'rgba(13, 11, 177, 0.12)',
     accentAction: vars.color.pink400,
-    accentActionSoft: 'rgba(251, 17, 142, 0.12)',
+    accentActionSoft: 'rgba(13, 11, 177, 0.12)',
 
     explicitWhite: '#FFFFFF',
 
     backgroundFloating: '#00000000',
     backgroundInteractive: vars.color.grey100,
     backgroundModule: vars.color.grey50,
-    backgroundOutline: `rgba(94,104,135,0.24)`,
-    backgroundSurface: '#FFFFFF',
+    backgroundOutline: `rgba(255,255,255,0.24)`,
+    backgroundSurface: '#0D0BB1',
 
     modalBackdrop: 'rgba(0, 0, 0, 0.3)',
 
