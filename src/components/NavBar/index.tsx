@@ -1,7 +1,5 @@
 import { Trans } from '@lingui/macro'
 import { useWeb3React } from '@web3-react/core'
-import Logo from 'components/Logo'
-import UniIcons from 'components/Logo'
 import Web3Status from 'components/Web3Status'
 import { NftVariant, useNftFlag } from 'featureFlags/flags/nft'
 import { chainIdToBackendName } from 'graphql/data/util'
@@ -78,9 +76,7 @@ const Navbar = () => {
       <nav className={styles.nav}>
         <Box display="flex" height="full" flexWrap="nowrap" alignItems="stretch">
           <Box className={styles.leftSideContainer}>
-            <Box as="a" href="#/swap" className={styles.logoContainer}>
-              <img width="24px" src="./static/media/planets.41c4868f.svg" alt="logo" />
-            </Box>
+            <Box as="a" href="#/swap" className={styles.logoContainer}></Box>
             <Box display={{ sm: 'flex', lg: 'none' }}>
               <ChainSelector leftAlign={true} />
             </Box>
@@ -92,34 +88,31 @@ const Navbar = () => {
             <SearchBar />
           </Box>
           <Box className={styles.rightSideContainer}>
-            <img height="500px" src="./static/media/spacemen_and_planets.e5cb045c.svg">
-              <Row gap="12">
-                <Box display={{ sm: 'flex', xl: 'none' }}>
-                  <SearchBar />
-                </Box>
-                <Box display={{ sm: 'none', lg: 'flex' }}>
-                  <MenuDropdown />
-                </Box>
-                {showShoppingBag && <ShoppingBag />}
-                <Box display={{ sm: 'none', lg: 'flex' }}>
-                  <ChainSelector />
-                </Box>
-
-                <Web3Status />
-              </Row>
-              <Box>
+            <Row gap="12">
+              <Box display={{ sm: 'flex', xl: 'none' }}>
+                <SearchBar />
               </Box>
-              <nav>
-                <Box className={styles.mobileBottomBar}>
-                  <PageTabs />
-                  <Box marginY="4">
-                    <MenuDropdown />
-                  </Box>
-                </Box>
-              </nav>
-            </img>
+              <Box display={{ sm: 'none', lg: 'flex' }}>
+                <MenuDropdown />
+              </Box>
+              {showShoppingBag && <ShoppingBag />}
+              <Box display={{ sm: 'none', lg: 'flex' }}>
+                <ChainSelector />
+              </Box>
+
+              <Web3Status />
+            </Row>
           </Box>
-          )
+        </Box>
+      </nav>
+      <Box className={styles.mobileBottomBar}>
+        <PageTabs />
+        <Box marginY="4">
+          <MenuDropdown />
+        </Box>
+      </Box>
+    </>
+  )
 }
 
-          export default Navbar
+export default Navbar
