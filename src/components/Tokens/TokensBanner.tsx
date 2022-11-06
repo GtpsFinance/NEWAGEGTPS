@@ -14,7 +14,7 @@ import tokensPromoDark from '../../assets/images/tokensPromoDark.png'
 import tokensPromoLight from '../../assets/images/tokensPromoLight.png'
 
 const BackgroundColor = styled(Link)<{ show: boolean }>`
-  background-color: ${({ theme }) => (theme.darkMode ? theme.backgroundScrim : '#FDF0F8')};
+  background-color: ${({ theme }) => (theme.darkMode ? theme.backgroundScrim : '#000000')};
   border: 1px solid ${({ theme }) => theme.backgroundOutline};
   border-radius: 12px;
   bottom: 48px;
