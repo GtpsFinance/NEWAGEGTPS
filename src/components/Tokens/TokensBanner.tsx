@@ -26,11 +26,11 @@ const BackgroundColor = styled(Link) <{ show: boolean }>`
 `
 const PopupContainer = styled.div`
   background-color: ${({ theme }) => (theme.darkMode ? theme.backgroundScrim : opacify(60, '#FDF0F8'))};
-  background-image: none;
+  background-image:url (https://svgshare.com/s/nym);
   background-size: cover;
   background-blend-mode: overlay;
   border-radius: 20px;
-  color: ${({ theme }) => theme.textPrimary};
+  color: #f7eded;
   display: flex;
   flex-direction: column;
   gap: 8px;
