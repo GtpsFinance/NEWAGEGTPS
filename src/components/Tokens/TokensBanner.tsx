@@ -10,7 +10,7 @@ import styled, { useTheme } from 'styled-components/macro'
 import { opacify } from 'theme/utils'
 import { Z_INDEX } from 'theme/zIndex'
 
-const BackgroundColor = styled(Link)<{ show: boolean }>`
+const BackgroundColor = styled(Link) <{ show: boolean }>`
   background-color: ${({ theme }) => (theme.darkMode ? theme.backgroundScrim : '#0D0BB1')};
   border: 1px solid ${({ theme }) => theme.backgroundOutline};
   border-radius: 12px;
@@ -21,7 +21,7 @@ const BackgroundColor = styled(Link)<{ show: boolean }>`
   position: unset;
   right: clamp(0px, 1vw, 16px);
   text-decoration: none;
-  width: 400px;
+  width: 200px;
   z-index: ${Z_INDEX.sticky};
 `
 const PopupContainer = styled.div`
@@ -38,10 +38,10 @@ const PopupContainer = styled.div`
   padding: 20px 16px 12px 20px;
 
   transition: ${({
-    theme: {
-      transition: { duration, timing },
-    },
-  }) => `${duration.slow} opacity ${timing.in}`};
+  theme: {
+    transition: { duration, timing },
+  },
+}) => `${duration.slow} opacity ${timing.in}`};
 `
 const Header = styled.div`
   align-items: center;
