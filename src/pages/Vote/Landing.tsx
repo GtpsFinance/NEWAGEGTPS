@@ -165,9 +165,7 @@ export default function Landing() {
                   </RowBetween>
                   <RowBetween>
                     <ThemedText.DeprecatedWhite fontSize={14}>
-                      <Trans>
-                        Holding our Gtps.Finance [Gfi] entitles anyone to vote.
-                      </Trans>
+                      <Trans>Holding our Gtps.Finance [Gfi] entitles anyone to vote.</Trans>
                     </ThemedText.DeprecatedWhite>
                   </RowBetween>
                   <ExternalLink
