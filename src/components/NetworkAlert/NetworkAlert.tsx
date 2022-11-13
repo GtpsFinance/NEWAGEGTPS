@@ -23,7 +23,7 @@ export const Controls = styled.div`
 `
 
 const BodyText = styled.div`
-  color: ${({ color }) => color};
+  color: #f5f5f5;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -122,12 +122,13 @@ const LinkOutToBridge = styled(ExternalLink)`
   border-radius: 8px;
   color: white;
   display: flex;
+  flex-direction: column;
   font-size: 16px;
   justify-content: space-between;
   padding: 6px 8px;
   margin-right: 12px;
   text-decoration: none !important;
-  width: 100%;
+  width: 60%;
 `
 
 const StyledArrowUpRight = styled(ArrowUpRight)`
@@ -170,10 +171,10 @@ export function NetworkAlert() {
             <L2Icon src={logoUrl} />
             <AutoRow>
               <Header>
-                <Trans>{label} token bridge</Trans>
+                <Trans>Use the {label} bridge</Trans>
               </Header>
               <HideSmall>
-                <Trans>Deposit tokens to the {label} network.</Trans>
+                <Trans>Visit {label} bridge.</Trans>
               </HideSmall>
             </AutoRow>
           </BodyText>
