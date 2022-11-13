@@ -56,7 +56,7 @@ const HeaderText = styled.span`
 
 const Description = styled.span`
   font-weight: 400;
-  font-size: 40px;
+  font-size: 16px;
   line-height: 16px;
   width: max(212px, calc(100% - 36px));
 `
