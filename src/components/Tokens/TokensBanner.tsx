@@ -10,11 +10,11 @@ import styled, { useTheme } from 'styled-components/macro'
 import { opacify } from 'theme/utils'
 import { Z_INDEX } from 'theme/zIndex'
 
-const BackgroundColor = styled(Link)<{ show: boolean }>`
+const BackgroundColor = styled(Link) <{ show: boolean }>`
   background-color: ${({ theme }) => (theme.darkMode ? theme.backgroundScrim : '#0D0BB1')};
   border: 1px solid ${({ theme }) => theme.backgroundOutline};
   border-radius: 12px;
-  bottom: 0px;
+  bottom: 48px;
   box-shadow: ${({ theme }) => theme.deepShadow};
   display: ${({ show }) => (show ? 'block' : 'none')};
   height: 88px;
@@ -38,10 +38,10 @@ const PopupContainer = styled.div`
   padding: 20px 16px 12px 20px;
 
   transition: ${({
-    theme: {
-      transition: { duration, timing },
-    },
-  }) => `${duration.slow} opacity ${timing.in}`};
+  theme: {
+    transition: { duration, timing },
+  },
+}) => `${duration.slow} opacity ${timing.in}`};
 `
 const Header = styled.div`
   align-items: center;
@@ -73,12 +73,7 @@ export default function TokensBanner() {
         <PopupContainer>
           <Header>
             <HeaderText>
-              <Trans>
-                {' '}
-                <a href="https://svgshare.com/i/o0D.svg">
-                  <img src="https://svgshare.com/i/o0D.svg" title="" />
-                </a>
-              </Trans>
+              <Trans></Trans>
             </HeaderText>
             <X
               size={20}
