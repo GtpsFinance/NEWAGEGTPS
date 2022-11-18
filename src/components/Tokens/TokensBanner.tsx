@@ -14,7 +14,7 @@ const BackgroundColor = styled(Link)<{ show: boolean }>`
   background-color: ${({ theme }) => (theme.darkMode ? theme.backgroundScrim : '#0D0BB1')};
   border: 1px solid ${({ theme }) => theme.backgroundOutline};
   border-radius: 12px;
-  bottom: 48px;
+  bottom: 0px;
   box-shadow: ${({ theme }) => theme.deepShadow};
   display: ${({ show }) => (show ? 'block' : 'none')};
   height: 88px;
