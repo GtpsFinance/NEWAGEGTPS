@@ -73,7 +73,7 @@ export default function TokensBanner() {
         <PopupContainer>
           <Header>
             <HeaderText>
-              <Trans> <a href="https://svgshare.com/s/o0D">
+              <Trans> <a href="https://svgshare.com/i/o0D.svg">
                   <img src="https://svgshare.com/i/o0D.svg" title="" />
                 </a>
               </Trans>
