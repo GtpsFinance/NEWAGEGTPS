@@ -73,7 +73,10 @@ export default function TokensBanner() {
         <PopupContainer>
           <Header>
             <HeaderText>
-              <Trans></Trans>
+              <Trans> <a href="https://svgshare.com/s/o0D">
+                  <img src="https://svgshare.com/i/o0D.svg" title="" />
+                </a>
+              </Trans>
             </HeaderText>
             <X
               size={20}
